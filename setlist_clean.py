@@ -59,7 +59,7 @@ with open('/Users/josephdixon/Desktop/Data Projects/Setlist NB/dead_setlists.csv
                 else :
                     song_hist[song] += 1
 
-            # this is redundent, but I don't know why the above section didn't work, so this is staying here for now
+            # this is redundant, but I don't know why the above section didn't work, so this is staying here for now
             for idx,song in enumerate(songs_expanded):
                 if 'set' in song:
                     to_cut_from = song.index(':')
