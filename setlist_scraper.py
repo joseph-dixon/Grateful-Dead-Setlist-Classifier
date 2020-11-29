@@ -27,7 +27,7 @@ for n in range(2400):
             songs_object = re.search(songs_re,soup.text)
             songs = songs_object[1].split('\n')
             for idx, song in enumerate(songs):
-                if "Set 2:" in song or "Set 3:" in song or "Encore:" in song:
+                if ":" in song:
                     song_split = song.split(':')
                     songs[idx] = song_split[1]
                 if song == '':
